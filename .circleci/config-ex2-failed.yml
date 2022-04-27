@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: bundle install 
+          command: bundle install
       - run:
           command: bundle exec rubocop
   test-rspec:
@@ -20,7 +20,7 @@ jobs:
           command: bundle exec rspec
 
 workflows:
-  exercise1: 
+  exercise1:
     jobs:
       - test-rubocop
       - test-rspec:
