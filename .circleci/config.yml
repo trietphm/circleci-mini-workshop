@@ -13,7 +13,7 @@ jobs:
       - run:
           command: bundle install
       - run:
-          command: bundle exec rspec ./spec/test1.rb
+          command: bundle exec rspec ./spec/test1_spec.rb
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
